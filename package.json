@@ -1,6 +1,9 @@
 {
   "name": "nuxt-fundamentals",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.16.x"
+  },
   "description": "My doozie Nuxt.js project",
   "author": "Jonathan Ho",
   "private": true,
@@ -9,6 +12,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "lint-staged": {
